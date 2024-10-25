@@ -1,0 +1,111 @@
+body {
+    margin: 0%;
+    padding: 0%;
+
+
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    background-color: #ffa5e9;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* h1::before{
+    content: "Um estudo de caso sobre: ";
+    color: rgb(255, 141, 141);
+
+} */
+nav ul {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 17, 255);
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+p {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+nav ul li a:active {
+    background-color: #007745;
+}
+
+nav ul li a:visited {
+    color: #00b96c;
+    background-color: rgb(0, 66, 128);
+
+}
+
+/* p::first-letter{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 1.2em;
+    
+} */
+p::selection {
+    background-color: rgb(251, 255, 0);
+    color: black;
+}
+
+img {
+    margin-left: 31%;
+    width: 400px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #2a9e6e;
+    padding: 5px;
+}
+
+@media(max-width:480px){
+    img {
+        margin: auto;
+        display: block;
+        width: 400px;
+    }
+    
+    nav ul li a:hover {
+        
+        border-radius: 0;
+    }
+}
+@media(max-width:768px){
+     img {
+        margin: auto;
+        display: block;
+        width: 400px;
+    }
+    
+    footer{
+        margin-top: 10px;
+    }
+}
